@@ -34,13 +34,9 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run Migrations
-      run: npm run migrate:test
+      run: npm run migrate up
       env:
-        PGHOST: localhost
-        PGPORT: 5432
-        PGUSER: developer
-        PGPASSWORD: supersecretpassword
-        PGDATABASE: forumapi_test
+        DATABASE_URL: postgres://developer:supersecretpassword@localhost:5432/forumapi_test
     - name: Run Tests
       run: npm test
       env:
