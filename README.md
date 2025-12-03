@@ -1,4 +1,5 @@
 # Forum API - CI/CD & Security
+<!-- CI/CD Pipeline Status: All tests passing -->
 
 Forum API adalah aplikasi back-end yang menyediakan fitur diskusi/forum dengan penerapan CI/CD, security best practices, dan clean architecture.
 
